@@ -6,23 +6,23 @@
     <meta name="description" content="Northwind Gym & Recovery on moderni kuntosali Tampereella, tarjoten laadukkaat palvelut sekä monipuoliset jäsenyydet. ">
     <title>Northwind Gym & Recovery etusivu, esittely palveluista ja jäsenyyksistä.</title>
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/ilmari.css">
    <head> 
 <body>
 
     <header>
-        <img src="NW_LOGO.png" alt="Northwind Gym&Recovery logo">
+        <img src="../images/NW_LOGO.png" alt="Northwind Gym&Recovery logo">
         <h1>Northwind Gym & Recovery</h1>
     </header>
 
     <nav>
         <ul>
-            <li><a href="northwindgymetusivu.html">Etusivu</a></li>
-            <li><a href="northwindgympalvelut.html">Palvelut</a></li>
-            <li><a href="northwindgymjäsenyydet.html">Jäsenyydet</a></li>
-            <li><a href="northwindgymliittymissivu.html">Liittymissivu</a></li>
-            <li><a href="northwindgymkäyttäjäsivu.html">Käyttäjäsivu</a></li>
-            <li><a href="northwindgymasiakaspalaute.html">Asiakaspalaute</a></li>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="palvelut.html">Palvelut</a></li>
+            <li><a href="jasenyydet.html">Jäsenyydet</a></li>
+            <li><a href="liity.html">Liittymissivu</a></li>
+            <li><a href="kayttajasivu.html">Käyttäjäsivu</a></li>
+            <li><a href="asiakaspalaute.html">Asiakaspalaute</a></li>
         </ul>
     </nav>
 <main>
@@ -33,23 +33,37 @@
         <div class="tarjous-banneri">
     TUTUSTUMISTARJOUS: Osta 2kk perusjäsenyyttä, saat 1kk kaupan päälle! (Yhteensä 3kk)
 </div>
-        <a href="northwindgymjäsenyydet.html">Tutustu jäsenyyksiin</a>
+        <a href="jasenyydet.html">Tutustu jäsenyyksiin</a>
     </section>
 
     <section>
-        <h2>Palvelut</h2>
-        <div>
-            <div>Kuntosali</div>
-            <div>Palautuminen</div>
-            <div>Ohjatut tunnit</div>
+    <h2>Palvelut</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Kuntosali</h3>
+            <img src="../images/salijalaitteet.jpg" alt="Kuva kuntosalin laitteista.">
         </div>
-        <div class="kuvat palveluista">
-            <img src="salijalaitteet.jpg" alt="Kuva kuntosalin laitteista.">
-            <img src="sauna2.jpg" alt="Kuva kuntosalin saunasta.">
-            <img src="hieronta.jpg" alt="Kuva hieronnasta.">
-            <img src="oihjattutunti.jpg" alt="Kuva ohjatulta tunnilta, kuvassa 3 ihmistä venyttelemässä.">
+
+        <div class="card">
+            <h3>Sauna</h3>
+            <img src="../images/salinsauna.jpg" alt="Kuva kuntosalin saunasta.">
         </div>
-    </section>
+
+        <div class="card">
+            <h3>Hieronta</h3>
+            <img src="../images/hieronta2.jpg" alt="Kuva hieronnasta.">
+        </div>
+
+        <div class="card">
+            <h3>Ohjatut tunnit</h3>
+            <img src="../images/ohjattutunti.jpg" alt="Kuva ohjatulta tunnilta.">
+        </div>
+
+    </div>
+</section>
+
 
     <section>
         <h2>Jäsenyydet</h2>
@@ -64,7 +78,7 @@
 
     <section>
         <div>
-            <img src="sali.PNG" alt="Kuva kuntosalilta">
+            <img src="../images/sali.PNG" alt="Kuva kuntosalilta">
         </div>
     </section>
 
@@ -84,8 +98,8 @@
             <div class="kartta">
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1975.1891!2d23.77665!3d61.503694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468edfa6f0e2d3c1%3A0x4c8c9f3b8b1a0b4f!2sTammelan%20puistokatu%2024%2C%2033100%20Tampere!5e0!3m2!1sfi!2sfi!4v1700000000000!5m2!1sfi!2sfi"
-        width="450"
-        height="300"
+        width="200"
+        height="200"
         style="border:0;"
         allowfullscreen=""
         loading="lazy"
