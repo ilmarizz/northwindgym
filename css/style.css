@@ -1,0 +1,100 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a; /* tumma sininen */
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #020617;
+}
+
+header img {
+    width: 80px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #38bdf8;
+}
+
+/* NAV */
+nav {
+    background: #020617;
+    border-top: 1px solid #1e293b;
+    border-bottom: 1px solid #1e293b;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #cbd5f5;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* SECTIONS */
+section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #1e293b;
+    border-radius: 8px;
+}
+
+/* BUTTON */
+section a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: #38bdf8;
+    color: #020617;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section a:hover {
+    background: #0ea5e9;
+}
+
+/* GRID */
+.kuvat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.kuvat img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #020617;
+    margin-top: 2rem;
+}
