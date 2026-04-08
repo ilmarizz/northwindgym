@@ -97,4 +97,73 @@ footer {
     padding: 1rem;
     background: #020617;
     margin-top: 2rem;
+}/* CARD layout */
+.card {
+    background: #1e293b;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+/* kuvat siistiksi */
+.card img {
+  .card img {
+    width: 100%;
+    max-width: 500px;   /* 👈 tämä pienentää */
+    display: block;
+    margin: 1rem auto;  /* keskelle */
+    border-radius: 8px;
+}  
+}
+
+/* nappi keskelle */
+.card button {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.7rem 1.5rem;
+    background: #38bdf8;
+    color: #020617;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card button:hover {
+    background: #0ea5e9;
+}
+
+/* blockquote siistiksi */
+blockquote {
+    background: #0f172a;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 4px solid #38bdf8;
+    border-radius: 6px;
+}
+
+/* form paremmaksi */
+form ul {
+    list-style: none;
+}
+
+form li {
+    margin-bottom: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 6px;
+    border: none;
+}
+
+/* kartta keskelle */
+.kartta iframe {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
 }
