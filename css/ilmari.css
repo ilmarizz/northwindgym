@@ -166,4 +166,17 @@ input, textarea {
     display: block;
     margin: 1rem auto;
     border-radius: 8px;
+}.button-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: #38bdf8;
+    color: #020617;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button-link:hover {
+    background: #0ea5e9;
 }
