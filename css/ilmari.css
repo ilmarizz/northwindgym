@@ -289,4 +289,9 @@ footer p {
         width: 100%;
         text-align: center;
     }
+}section img {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+    height: auto;
 }
