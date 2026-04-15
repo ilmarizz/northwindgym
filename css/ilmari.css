@@ -294,4 +294,24 @@ footer p {
     margin: 2rem auto;
     max-width: 100%;
     height: auto;
+}.login-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.login-img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.login-actions .button-link {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
 }
