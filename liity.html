@@ -25,13 +25,20 @@
     </nav>
     <main>
       <section>
-        <h2>Jäsenyydet</h2>
+        <h2>Jäsenyydet:</h2>
         <div>
             <div>Kuntosali perusjäsenyys 45€/kk (TUTUSTUMISTARJOUS: Osta 2kk perusjäsenyyttä, saat 1kk kaupan päälle.Yhteensä 3kk.) </div>
             <div>Palautuminen 65€/kk</div>
             <div>Premium 80€/kk (HUOM! ETU: Kun olet ollut 6kk premium-jäsenenä, saat 1kk ilmaiseksi.)</div>
             <div>Opiskelija 30€/kk</div>
             <div>10 kerran kortti 70€/kk</div>
+        </div>
+        <h2>Palvelut:</h2>
+        <div>
+            <div>Kuntosali 10€/kerta</div>
+            <div>Sauna 12€/kerta</div>
+            <div>Hieronta 50€/60min</div>
+            <div>Ohjattu tunti 12€/kerta</div>
         </div>
     </section>
         <form>
@@ -54,8 +61,27 @@
                 <input type="text" id="email" name="email" placeholder="..">
             </li>
             <li>
-                <label for="subject">Kerro minkä jäsenyyden/palvelun haluat ja muita haluamasi lisätietoja.</label>
-                <textarea id="subject" name="subject" placeholder=".."></textarea>
+                <label for="subject">Valitse haluamasi jäsenyys tai palvelu:</label>
+                <li>
+<select id="subject" name="subject">
+    <option value="">-- Valitse vaihtoehto --</option>
+    <option value="kuntosali">Kuntosali perusjäsenyys</option>
+    <option value="palautuminen">Palautuminen</option>
+    <option value="premium">Premium-jäsenyys</option>
+    <option value="opiskelija">Opiskelijajäsenyys</option>
+    <option value="10-kerran-kortti">10 kerran kortti</option>
+    <option value="Kuntosali">Kerta käynti kuntosalille</option>
+    <option value="Sauna">Kerta saunominen</option>
+    <option value="hieronta">Hieronta</option>
+    <option value="ohjatut-tunnit">Ohjattu tunti</option>
+    </select>
+    </li>
+    <li>
+        <label for="details">Lisätiedot:</label>
+<textarea id="details" name="details" placeholder=".."></textarea>
+</select>
+    </li>
+
             </li>
             <li class="button">
                 <button type="submit">Lähetä</button>
@@ -81,6 +107,11 @@
 </div>
             <p>Aukioloajat: ma–su 05–23</p>
             <p>Yhteystiedot: Northwindgym@info.com Puh.050 345 9021</p>
+            <div class="social-icons">
+  <img src="images/fblogo.png" alt="Facebook logo"></a>
+  <img src="images/iglogo.jpg" alt="Instagram logo"></a>
+  <img src="images/tiktoklogo.png" alt="TikTok logo"></a>
+</div>
         <p>FAQ | Cookies | © 2026 Northwind Gym & Recovery</p>
     </footer>
 </body>

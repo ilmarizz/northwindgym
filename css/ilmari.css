@@ -150,8 +150,7 @@ button:hover {
 }
 
 /* KORTIN NAPPI AINA ALAS JA KESKELLE */
-.card a,
-.card .button-link,
+.card a.button-link,
 .card button {
     margin-top: auto;
     align-self: center;
@@ -315,3 +314,56 @@ footer p {
     margin: 0 auto;
     width: fit-content;
 }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 28px;
+}
+.membership-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.membership-card {
+    background-color: #0f1a2b;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.membership-card img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.membership-card h3 {
+    margin-bottom: 10px;
+}
+
+.membership-card p {
+    margin-bottom: 20px;
+}
+.center-img {
+    display: block;
+    margin: 2rem auto;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+.button-link {
+    display: block;
+    margin: 1.5rem auto;
+    width: fit-content;
+}
+
+
+
