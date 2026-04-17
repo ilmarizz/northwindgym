@@ -6,6 +6,47 @@
     <meta name="description" content="Northwind Gym & Recovery liittymissivulla voit liittyä jäseneksi täyttämällä lomakkeeseen omat tietosi.">
     <title>Northwind Gym & Recovery liittymissivu, lomake.</title>
     <link rel="stylesheet" href="css/ilmari.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthClub",
+  "name": "Northwind Gym & Recovery",
+  "image": "https://example.com/images/NW_LOGO.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Tammelan puistokatu 24",
+    "addressLocality": "Tampere",
+    "postalCode": "33100",
+    "addressCountry": "FI"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "61.503694",
+    "longitude": "23.776650"
+  },
+  "url": "https://example.com",
+  "telephone": "+358503459021",
+  "priceRange": "€€",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "05:00",
+      "closes": "23:00"
+    }
+  ],
+  "description": "Northwind Gym & Recovery on moderni kuntosali ja palautumiskeskus Tampereella. Tarjoamme kuntosalin, saunan, hieronnan, ohjatut tunnit ja monipuoliset jäsenyydet."
+}
+</script>
+
 </head>
 <body>
     <header>
@@ -42,52 +83,55 @@
         </div>
     </section>
         <form>
-        <h2>Liity jäseneksi/osta palvelu tällä lomakkeella:</h2>
-        <ul>
-            <li>
-                <label for="fname">Etunimi</label>
-                <input type="text" id="fname" name="firstname" placeholder=".." autofocus>
-            </li>
-            <li>
-                <label for="lname">Sukunimi</label>
-                <input type="text" id="lname" name="lastname" placeholder="..">
-            </li>
-            <li> 
-                <label for="address">Osoite</label>
-                <input type="text" id="address" name="address" placeholder="..">
-            </li>
-            <li>
-                <label for="email">Sähköposti</label>
-                <input type="text" id="email" name="email" placeholder="..">
-            </li>
-            <li>
-                <label for="subject">Valitse haluamasi jäsenyys tai palvelu:</label>
-                <li>
-<select id="subject" name="subject">
-    <option value="">-- Valitse vaihtoehto --</option>
-    <option value="kuntosali">Kuntosali perusjäsenyys</option>
-    <option value="palautuminen">Palautuminen</option>
-    <option value="premium">Premium-jäsenyys</option>
-    <option value="opiskelija">Opiskelijajäsenyys</option>
-    <option value="10-kerran-kortti">10 kerran kortti</option>
-    <option value="Kuntosali">Kerta käynti kuntosalille</option>
-    <option value="Sauna">Kerta saunominen</option>
-    <option value="hieronta">Hieronta</option>
-    <option value="ohjatut-tunnit">Ohjattu tunti</option>
-    </select>
-    </li>
-    <li>
-        <label for="details">Lisätiedot:</label>
-<textarea id="details" name="details" placeholder=".."></textarea>
-</select>
-    </li>
+    <h2>Liity jäseneksi/osta palvelu tällä lomakkeella:</h2>
+    <ul>
+        <li>
+            <label for="fname">Etunimi</label>
+            <input type="text" id="fname" name="firstname" placeholder=".." autofocus>
+        </li>
 
-            </li>
-            <li class="button">
-                <button type="submit">Lähetä</button>
-            </li>
-        </ul>
-    </form>
+        <li>
+            <label for="lname">Sukunimi</label>
+            <input type="text" id="lname" name="lastname" placeholder="..">
+        </li>
+
+        <li>
+            <label for="address">Osoite</label>
+            <input type="text" id="address" name="address" placeholder="..">
+        </li>
+
+        <li>
+            <label for="email">Sähköposti</label>
+            <input type="text" id="email" name="email" placeholder="..">
+        </li>
+
+        <li>
+            <label for="subject">Valitse haluamasi jäsenyys tai palvelu:</label>
+            <select id="subject" name="subject">
+                <option value="">-- Valitse vaihtoehto --</option>
+                <option value="kuntosali">Kuntosali perusjäsenyys</option>
+                <option value="palautuminen">Palautuminen</option>
+                <option value="premium">Premium-jäsenyys</option>
+                <option value="opiskelija">Opiskelijajäsenyys</option>
+                <option value="10-kerran-kortti">10 kerran kortti</option>
+                <option value="kuntosali-kerta">Kerta käynti kuntosalille</option>
+                <option value="sauna-kerta">Kerta saunominen</option>
+                <option value="hieronta">Hieronta</option>
+                <option value="ohjattu-tunti">Ohjattu tunti</option>
+            </select>
+        </li>
+
+        <li>
+            <label for="details">Lisätiedot:</label>
+            <textarea id="details" name="details" placeholder=".."></textarea>
+        </li>
+
+        <li class="button">
+            <button type="submit">Lähetä</button>
+        </li>
+    </ul>
+</form>
+
     
     </main>
 
@@ -108,9 +152,9 @@
             <p>Aukioloajat: ma–su 05–23</p>
             <p>Yhteystiedot: Northwindgym@info.com Puh.050 345 9021</p>
             <div class="social-icons">
-  <img src="images/fblogo.png" alt="Facebook logo"></a>
-  <img src="images/iglogo.jpg" alt="Instagram logo"></a>
-  <img src="images/tiktoklogo.png" alt="TikTok logo"></a>
+  <img src="images/fblogo.png" alt="Facebook logo">
+  <img src="images/iglogo.jpg" alt="Instagram logo">
+  <img src="images/tiktoklogo.png" alt="TikTok logo">
 </div>
         <p>FAQ | Cookies | © 2026 Northwind Gym & Recovery</p>
     </footer>
